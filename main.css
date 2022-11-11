@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Signika:wght@300;400;500;600&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,75 +8,6 @@
 ul,
 ol {
   list-style: none;
-}
-
-.navbar {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin: 30px;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: rgba(250, 235, 215, 0.348);
-}
-
-.body {
-  background-image: url("../img/shellfish-3062011_1920.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.paquetes {
-  background-image: url("../img/paquetes.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-.aereos {
-  background-image: url("../img/aereos.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-.hotel {
-  background-image: url("../img/alojamiento.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.contacto {
-  background-image: url("../img/fondocontactos.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-.quienessomos {
-  background-image: url("../img/oficina.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-.search {
-  background-color: rgba(250, 235, 215, 0.33);
-  border-radius: 10px;
-  margin: 30px;
-  padding: 10px;
-  text-align: center;
-}
-
-.navbar {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin: 30px;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: rgba(250, 235, 215, 0.348);
-}
-
-.form1 {
-  background-color: rgba(250, 235, 215, 0.19);
-  border-radius: 20px;
-  padding: 5px;
-  margin: 50px;
 }
 
 .titulo {
@@ -111,6 +43,79 @@ ol {
   border-radius: 10px;
 }
 
+.navbar {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(250, 235, 215, 0.348);
+}
+
+.search {
+  background-color: rgba(250, 235, 215, 0.33);
+  border-radius: 10px;
+  margin: 30px;
+  padding: 10px;
+  text-align: center;
+}
+
+/*banner*/
+.banner {
+  margin: 30px;
+  padding: 50px;
+  background-image: url(../../imga/hotsale.jpg);
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.banner1 {
+  width: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(-45deg, #df9eb8, rgb(153, 109, 194), #2b0413, violet, red);
+  background-size: 400%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 4vw;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animated_text 6s ease-in-out infinite;
+  -moz-animation: animated_text 6s ease-in-out infinite;
+  -webkit-animation: animated_text 6s ease-in-out infinite;
+  left: 50%;
+  top: 50%;
+}
+
+@-webkit-keyframes animated_text {
+  0% {
+    background-position: 0px 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0px 50%;
+  }
+}
+@keyframes animated_text {
+  0% {
+    background-position: 0px 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0px 50%;
+  }
+}
+.footer1 {
+  background: rgb(75, 146, 173);
+  background: linear-gradient(90deg, rgb(75, 146, 173) 0%, rgba(0, 224, 255, 0.1379902303) 38%);
+  border-radius: 0 100px 0 0;
+}
+
 /*tarjeta viajes*/
 .tarjeta {
   margin: 30px;
@@ -126,17 +131,15 @@ ol {
   cursor: default;
   transition: all 400ms ease;
 }
-
-.tarjeta:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transform: translateY(-3%);
-}
-
-.tarjeta__img {
+.tarjeta .tarjeta__img {
   border: 2px solid;
   width: 100%;
   height: 100px;
   border-radius: 10px;
+}
+.tarjeta .tarjeta:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
 }
 
 .tarjeta__titulo {
@@ -189,64 +192,19 @@ ol {
   color: rgb(247, 244, 244);
 }
 
-.footer1 {
-  background: rgb(75, 146, 173);
-  background: linear-gradient(90deg, rgb(75, 146, 173) 0%, rgba(0, 224, 255, 0.1379902303) 38%);
-  border-radius: 0 100px 0 0;
+.body {
+  background-image: url("../../imga/shellfish-3062011_1920.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-/*banner*/
-.banner {
-  margin: 30px;
-  padding: 50px;
-  background-image: url(../img/hotsale.jpg);
-  border-radius: 20px;
-  text-align: center;
-  position: relative;
+.aereos {
+  background-image: url("../../imga/aereos.jpg");
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.banner1 {
-  width: 100%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  background: linear-gradient(-45deg, #df9eb8, rgb(153, 109, 194), #2b0413, violet, red);
-  background-size: 400%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 800;
-  font-size: 4vw;
-  text-transform: uppercase;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: animated_text 6s ease-in-out infinite;
-  -moz-animation: animated_text 6s ease-in-out infinite;
-  -webkit-animation: animated_text 6s ease-in-out infinite;
-  left: 50%;
-  top: 50%;
-}
-
-@-webkit-keyframes animated_text {
-  0% {
-    background-position: 0px 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0px 50%;
-  }
-}
-
-@keyframes animated_text {
-  0% {
-    background-position: 0px 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0px 50%;
-  }
-}
 /*formulario aerolinea*/
 #form {
   background-color: #000;
@@ -352,6 +310,13 @@ ol {
   color: #fff;
 }
 
+.hotel {
+  background-image: url("../../imga/alojamiento.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /*formulario hotel y alojamientos*/
 #form {
   background-color: #000;
@@ -422,4 +387,28 @@ ol {
   outline: none;
   padding: 10px;
   font-size: 20px;
+}
+
+.contacto {
+  background-image: url("../../imga/fondocontactos.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.cruceros {
+  background-image: url("../../imga/crucero.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.paquetes {
+  background-image: url("../../imga/paquetes.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.quienessomos {
+  background-image: url("../../imga/oficina.jpg");
+  background-attachment: fixed;
+  background-size: cover;
 }/*# sourceMappingURL=main.css.map */
