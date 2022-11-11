@@ -131,6 +131,11 @@ ol {
   cursor: default;
   transition: all 400ms ease;
 }
+@media screen and (max-width: 576px) {
+  .tarjeta {
+    flex-direction: column;
+  }
+}
 .tarjeta .tarjeta__img {
   border: 2px solid;
   width: 100%;

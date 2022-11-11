@@ -13,6 +13,11 @@
     cursor: default;
     transition: all 400ms ease;
 
+    @include mobile {
+        flex-direction: column;
+
+    }
+
     .tarjeta__img {
         border: 2px solid;
         width: 100%;
@@ -24,7 +29,7 @@
         box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
         transform: translateY(-3%);
     }
-    
+
 }
 
 
