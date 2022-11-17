@@ -8,7 +8,9 @@
     position: relative;
 
     @include mobile {
-        
+        width: 75%;
+        min-width: 320px;
+
     }
 }
 .banner1 {

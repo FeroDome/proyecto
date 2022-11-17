@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Signika:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,27 +14,31 @@ ol {
 }
 
 .titulo {
+  color: rgb(69, 143, 146);
   font-size: 50px;
   background-color: rgba(250, 235, 215, 0.725);
   border-radius: 10px;
-  margin: 40px;
-  padding: 10px;
+  margin: 20px;
+  padding: 20px;
   text-align: center;
 }
 
 .titulo2 {
+  color: rgb(69, 143, 146);
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
   background-color: rgba(250, 235, 215, 0.784);
   border-radius: 10px;
-  margin: auto;
-  padding: 10px;
+  margin: 20px;
+  padding: 20px;
+  font-family: "Nunito Sans", sans-serif;
 }
 
-.historia p {
+.titulo3 {
   background-color: rgba(250, 235, 215, 0.07);
   border-radius: 10px;
   font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .text {
@@ -70,6 +77,13 @@ ol {
   text-align: center;
   position: relative;
 }
+@media screen and (max-width: 375px) {
+  .banner {
+    width: 75%;
+    min-width: 320px;
+  }
+}
+
 .banner1 {
   width: 100%;
   position: absolute;
@@ -211,6 +225,12 @@ ol {
   color: rgb(247, 244, 244);
 }
 
+.medios {
+  display: inline-block;
+  border-radius: 30px;
+  flex-direction: column;
+  padding-inline: 20px;
+}
 .body {
   background-image: url("../../imga/shellfish-3062011_1920.jpg");
   background-attachment: fixed;
