@@ -231,6 +231,7 @@ ol {
   flex-direction: column;
   padding-inline: 20px;
 }
+
 .body {
   background-image: url("../../imga/shellfish-3062011_1920.jpg");
   background-attachment: fixed;
