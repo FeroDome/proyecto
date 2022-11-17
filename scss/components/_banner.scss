@@ -6,6 +6,10 @@
     border-radius: 20px;
     text-align: center;
     position: relative;
+
+    @include mobile {
+        
+    }
 }
 .banner1 {
     width: 100%;

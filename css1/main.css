@@ -156,7 +156,7 @@ ol {
   height: 100px;
   border-radius: 10px;
 }
-.tarjeta:hover {
+.tarjeta .tarjeta:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
 }
