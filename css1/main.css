@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Signika:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,27 +16,31 @@ ol {
 }
 
 .titulo {
+  color: rgb(69, 143, 146);
   font-size: 50px;
   background-color: rgba(250, 235, 215, 0.725);
   border-radius: 10px;
-  margin: 40px;
-  padding: 10px;
+  margin: 20px;
+  padding: 20px;
   text-align: center;
 }
 
 .titulo2 {
+  color: rgb(69, 143, 146);
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
   background-color: rgba(250, 235, 215, 0.784);
   border-radius: 10px;
-  margin: auto;
-  padding: 10px;
+  margin: 20px;
+  padding: 20px;
+  font-family: "Nunito Sans", sans-serif;
 }
 
-.historia p {
+.titulo3 {
   background-color: rgba(250, 235, 215, 0.07);
   border-radius: 10px;
   font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .text {
@@ -70,6 +79,13 @@ ol {
   text-align: center;
   position: relative;
 }
+@media screen and (min-width: 375px) and (max-width: 480px) {
+  .banner {
+    width: 75%;
+    min-width: 320px;
+  }
+}
+
 .banner1 {
   width: 100%;
   position: absolute;
@@ -116,18 +132,36 @@ ol {
   background: linear-gradient(90deg, rgb(75, 146, 173) 0%, rgba(0, 224, 255, 0.1379902303) 38%);
   border-radius: 0 100px 0 0;
 }
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 480px) {
   .footer1 {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 1024px) {
-  .footer1 {
-    grid-row-start: initial;
-    justify-content: center;
-    align-items: center;
+
+.footer2 {
+  background-color: rgba(250, 235, 215, 0.549);
+  margin: 30px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.footer2 .container {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+}
+@media screen and (min-width: 375px) and (max-width: 480px) {
+  .footer2 .container {
     display: block;
   }
+}
+.footer2 .footer-ul .h3 {
+  text-decoration: underline;
+}
+.footer2 .footer-li {
+  color: rgb(59, 70, 224);
+  font-size: 1.2rem;
+  font-family: "Roboto Slab", serif;
 }
 
 /*tarjeta viajes*/
@@ -145,7 +179,7 @@ ol {
   cursor: default;
   transition: all 400ms ease;
 }
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 480px) {
   .tarjeta {
     flex-direction: column;
   }
@@ -156,7 +190,7 @@ ol {
   height: 100px;
   border-radius: 10px;
 }
-.tarjeta .tarjeta:hover {
+.tarjeta:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
 }
@@ -209,6 +243,13 @@ ol {
   padding: 5px 0;
   background-color: rgba(8, 56, 58, 0.749);
   color: rgb(247, 244, 244);
+}
+
+.medios {
+  display: inline-block;
+  border-radius: 30px;
+  flex-direction: column;
+  padding-inline: 20px;
 }
 
 .body {
