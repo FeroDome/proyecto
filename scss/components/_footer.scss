@@ -27,6 +27,7 @@
 
             @include mobile {
                 display: block;
+                flex-direction: column;
             }
 
 

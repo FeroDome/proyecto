@@ -3,9 +3,17 @@ $colordos: rgb(69, 143, 146);
 $colortres: rgb(59, 70, 224);
 $colorcuatro: rgba(132, 166, 187, 0.518);
 $colorcinco: rgba(250, 235, 215, 0.549);
+$colornegro: black;
+
 
 
 $fontnunito: 'Nunito Sans', sans-serif;
 $fontubuntu: 'Ubuntu', sans-serif;
 $fontroboto: 'Roboto Slab', serif;
 $fontcaveatinclinada: 'Caveat', cursive;
+
+
+$grid-breakpoints: (
+  xs: 375px,
+  xl: 1200px,
+);

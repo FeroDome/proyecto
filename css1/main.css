@@ -49,9 +49,23 @@ ol {
   margin: 20px;
   padding: 20px;
   background-color: rgba(35, 66, 88, 0.792);
-  text-align: left;
+  text-align: justify;
   overflow: hidden;
   border-radius: 10px;
+}
+
+.h1form {
+  text-align: center;
+  color: rgb(233, 235, 240);
+  font-size: 3rem;
+  font-family: "Roboto Slab", serif;
+}
+
+.titulo4 {
+  color: aqua;
+  text-align: center;
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
 }
 
 .navbar {
@@ -79,7 +93,7 @@ ol {
   text-align: center;
   position: relative;
 }
-@media screen and (min-width: 375px) and (max-width: 480px) {
+@media screen and (max-width: 375px) {
   .banner {
     width: 75%;
     min-width: 320px;
@@ -132,7 +146,7 @@ ol {
   background: linear-gradient(90deg, rgb(75, 146, 173) 0%, rgba(0, 224, 255, 0.1379902303) 38%);
   border-radius: 0 100px 0 0;
 }
-@media screen and (min-width: 375px) and (max-width: 480px) {
+@media screen and (max-width: 375px) {
   .footer1 {
     flex-direction: column;
   }
@@ -150,9 +164,10 @@ ol {
   padding: 0;
   justify-content: space-around;
 }
-@media screen and (min-width: 375px) and (max-width: 480px) {
+@media screen and (max-width: 375px) {
   .footer2 .container {
     display: block;
+    flex-direction: column;
   }
 }
 .footer2 .footer-ul .h3 {
@@ -164,6 +179,191 @@ ol {
   font-family: "Roboto Slab", serif;
 }
 
+/*formulario aerolinea*/
+.form1 {
+  background-color: black;
+  height: 650px;
+  width: 700px;
+  margin: 20px;
+  padding: 20px;
+  opacity: 0.7;
+  border-radius: 20px;
+  display: block;
+}
+.form1 h3 {
+  font-family: "Roboto Slab", serif;
+  color: rgb(233, 235, 240);
+  text-align: center;
+  border: 2px solid rgba(250, 235, 215, 0.549);
+  border-radius: 5px;
+  width: 310px;
+  padding: 10px;
+  margin: 20px;
+}
+.form1::-moz-placeholder {
+  color: #fff;
+}
+.form1:-ms-input-placeholder {
+  color: #fff;
+}
+.form1::placeholder {
+  color: #fff;
+}
+
+.input #input-group {
+  width: 300px;
+  margin: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+}
+
+.input2 #input-group {
+  width: 195px;
+  margin: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+}
+
+.input3 #input-group {
+  margin-left: 50px;
+}
+
+.input4 #input-group {
+  width: 300px;
+  margin: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+}
+
+.input4 #input-group1 {
+  width: 615px;
+  margin: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+}
+
+.input5 h3 {
+  font-family: "Roboto Slab", serif;
+  color: rgb(233, 235, 240);
+  text-align: center;
+  border: 2px solid rgba(250, 235, 215, 0.549);
+  border-radius: 5px;
+  width: 310px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.input6 #input-group {
+  width: 300px;
+  margin: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+}
+
+.input6 #input-group1 {
+  width: 615px;
+  margin: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+}
+
+/*formulario hotel y alojamientos*/
+.form2 {
+  background-color: rgb(9, 9, 9);
+  height: 500px;
+  width: 800px;
+  margin: auto;
+  margin-top: 100px;
+  opacity: 0.7;
+  border-radius: 10px;
+  display: block;
+}
+
+.first-group {
+  border: none;
+  width: 400px;
+  margin-top: 38px;
+  position: absolute;
+}
+
+.content {
+  border: 1px solid #fff;
+  margin: 10px;
+  margin-left: 8px;
+  padding: 5px;
+}
+
+.content #input-group {
+  border: none;
+  outline: none;
+  background: transparent;
+  margin-left: 8px;
+  width: 300px;
+  color: #fff;
+}
+.content #input-group::-moz-placeholder {
+  color: #fff;
+}
+.content #input-group:-ms-input-placeholder {
+  color: #fff;
+}
+.content #input-group::placeholder {
+  color: #fff;
+}
+
+.second-group {
+  border: none;
+  width: 400px;
+  margin-top: 55px;
+  margin-left: 400px;
+}
+
+#submit-btn {
+  margin-top: 30px;
+  margin-left: 600px;
+  background: transparent;
+  color: #fff;
+  width: 150px;
+  border: 1px solid red;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  font-size: 20px;
+}
+#submit-btn:hover {
+  background: rgb(233, 235, 240);
+  color: rgb(59, 70, 224);
+}
+
+@media screen and (max-width: 375px) {
+  .container-fluid {
+    flex-direction: column;
+  }
+}
 /*tarjeta viajes*/
 .tarjeta {
   margin: 30px;
@@ -179,7 +379,7 @@ ol {
   cursor: default;
   transition: all 400ms ease;
 }
-@media screen and (min-width: 375px) and (max-width: 480px) {
+@media screen and (max-width: 375px) {
   .tarjeta {
     flex-direction: column;
   }
@@ -245,13 +445,6 @@ ol {
   color: rgb(247, 244, 244);
 }
 
-.medios {
-  display: inline-block;
-  border-radius: 30px;
-  flex-direction: column;
-  padding-inline: 20px;
-}
-
 .body {
   background-image: url("../../imga/shellfish-3062011_1920.jpg");
   background-attachment: fixed;
@@ -265,188 +458,11 @@ ol {
   background-size: cover;
 }
 
-/*formulario aerolinea*/
-#form {
-  background-color: #000;
-  height: 550px;
-  width: 700px;
-  margin: auto;
-  padding: 20px;
-  opacity: 0.7;
-  border-radius: 20px;
-}
-
-#form h3 {
-  border-bottom: 2px solid #3399ff;
-  width: 210px;
-  padding: 5px;
-}
-
-::-moz-placeholder {
-  color: #fff;
-}
-
-:-ms-input-placeholder {
-  color: #fff;
-}
-
-::placeholder {
-  color: #fff;
-}
-
-#input #input-group {
-  width: 300px;
-  margin: 5px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  outline: none;
-  background: transparent;
-  color: #fff;
-}
-
-#input2 #input-group {
-  width: 195px;
-  margin: 5px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  outline: none;
-  background: transparent;
-  color: #fff;
-}
-
-#input3 #input-group {
-  margin-left: 50px;
-}
-
-#input4 #input-group {
-  width: 300px;
-  margin: 5px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  outline: none;
-  background: transparent;
-  color: #fff;
-}
-
-#input4 #input-group1 {
-  width: 615px;
-  margin: 5px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  outline: none;
-  background: transparent;
-  color: #fff;
-}
-
-#input5 h3 {
-  border-bottom: 2px solid #3399ff;
-  width: 220px;
-  padding: 5px;
-}
-
-#input6 #input-group {
-  width: 300px;
-  margin: 5px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  outline: none;
-  background: transparent;
-  color: #fff;
-}
-
-#input6 #input-group1 {
-  width: 615px;
-  margin: 5px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  outline: none;
-  background: transparent;
-  color: #fff;
-}
-
 .hotel {
   background-image: url("../../imga/alojamiento.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-/*formulario hotel y alojamientos*/
-#form {
-  background-color: #000;
-  height: 500px;
-  width: 900px;
-  margin: auto;
-  margin-top: 100px;
-  opacity: 0.7;
-}
-
-#first-group {
-  border: none;
-  width: 400px;
-  margin-top: 38px;
-  position: absolute;
-}
-
-#content {
-  border: 1px solid #fff;
-  margin: 10px;
-  margin-left: 8px;
-  padding: 5px;
-}
-
-#content #input-group {
-  border: none;
-  outline: none;
-  background: transparent;
-  margin-left: 8px;
-  width: 300px;
-  color: #fff;
-}
-
-::-moz-placeholder {
-  color: #fff;
-}
-
-:-ms-input-placeholder {
-  color: #fff;
-}
-
-::placeholder {
-  color: #fff;
-}
-
-.fa {
-  display: inline-block;
-  color: red;
-  border-right: 1px solid #fff;
-  padding: 8px;
-  margin-left: 8px;
-}
-
-#second-group {
-  border: none;
-  width: 400px;
-  margin-top: 55px;
-  margin-left: 400px;
-}
-
-#submit-btn {
-  margin-top: 30px;
-  margin-left: 600px;
-  background: transparent;
-  color: #fff;
-  width: 150px;
-  border: 1px solid red;
-  outline: none;
-  padding: 10px;
-  font-size: 20px;
 }
 
 .contacto {
@@ -471,4 +487,16 @@ ol {
   background-image: url("../../imga/oficina.jpg");
   background-attachment: fixed;
   background-size: cover;
+}
+
+.container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .img {
+  width: 350px;
+  margin-left: 25px;
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */
