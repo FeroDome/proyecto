@@ -7,12 +7,20 @@
     text-align: center;
     position: relative;
 
+    &:hover {
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+        transform: translateY(-3%);
+        background-color: $colordos;
+        color: $colornegro;
+    }
+
     @include mobile {
         width: 75%;
         min-width: 320px;
 
     }
 }
+
 .banner1 {
     width: 100%;
     position: absolute;
@@ -30,29 +38,36 @@
     -webkit-animation: animated_text 6s ease-in-out infinite;
     left: 50%;
     top: 50%;
+
+
 }
 
 @-webkit-keyframes animated_text {
     0% {
-    background-position: 0px 50%;
+        background-position: 0px 50%;
     }
+
     50% {
-    background-position: 100% 50%;
+        background-position: 100% 50%;
     }
+
     100% {
-    background-position: 0px 50%;
+        background-position: 0px 50%;
     }
 }
 
 @keyframes animated_text {
     0% {
-    background-position: 0px 50%;
+        background-position: 0px 50%;
     }
-    50% {
-    background-position: 100% 50%;
-    }
-    100% {
-    background-position: 0px 50%;
-    }
-}
 
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0px 50%;
+    }
+
+
+}
