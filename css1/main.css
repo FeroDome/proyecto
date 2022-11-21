@@ -541,6 +541,11 @@ ol {
   background-size: cover;
 }
 
+.formt {
+  color: rgb(233, 235, 240);
+  margin: 20px;
+}
+
 .cruceros {
   background-image: url("../../imga/crucero.jpg");
   background-attachment: fixed;
