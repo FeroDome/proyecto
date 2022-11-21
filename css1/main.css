@@ -104,7 +104,7 @@ ol {
 @media screen and (max-width: 375px) {
   .banner {
     width: 75%;
-    min-width: 320px;
+    max-width: 480px;
   }
 }
 
