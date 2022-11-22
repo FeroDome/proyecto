@@ -489,16 +489,16 @@ ol {
 }
 .grid .grid_item1 {
   grid-area: item1;
-  background-image: url(../../imga/imgarg/bsas1.jpg);
+  background-image: url(../imga/imgarg/bsas1.jpg);
   height: 400px;
 }
 .grid .grid_item2 {
   grid-area: item2;
-  background-image: url(../../imga/Verona.jpg);
+  background-image: url(../imga/Verona.jpg);
 }
 .grid .grid_item3 {
   grid-area: item3;
-  background-image: url(../../imga/crucero2.jpg);
+  background-image: url(../imga/crucero2.jpg);
 }
 .grid:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
