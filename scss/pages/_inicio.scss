@@ -1,5 +1,5 @@
 .body {
-    background-image: url("../../imga/shellfish-3062011_1920.jpg");
+    background-image: url("../imga/shellfish-3062011_1920.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -31,6 +31,8 @@
         color: $coloruno;
         text-align: left;
         padding-left: 20px;
+
+
     }
 
     h3 {
@@ -91,3 +93,23 @@
 
     }
 }
+.grid {
+    @include mobile{
+
+        display: flex;
+        flex-direction: column;
+        font-size: small;
+        background-image: contain;
+        padding: 20px;
+
+        .grid_item {
+            height: 300px;
+        }
+
+        }
+
+
+
+    }
+
+

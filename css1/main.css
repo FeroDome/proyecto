@@ -101,9 +101,9 @@ ol {
   background-color: rgba(69, 144, 146, 0.641);
   color: black;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   .banner {
-    width: 75%;
+    margin: 20px;
     max-width: 480px;
   }
 }
@@ -154,7 +154,7 @@ ol {
   background: linear-gradient(90deg, rgb(75, 146, 173) 0%, rgba(0, 224, 255, 0.1379902303) 38%);
   border-radius: 0 100px 0 0;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   .footer1 {
     flex-direction: column;
   }
@@ -172,7 +172,7 @@ ol {
   padding: 0;
   justify-content: space-around;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   .footer2 .container {
     display: block;
     flex-direction: column;
@@ -367,7 +367,7 @@ ol {
   color: rgb(59, 70, 224);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   .container-fluid {
     flex-direction: column;
   }
@@ -387,7 +387,7 @@ ol {
   cursor: default;
   transition: all 400ms ease;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 480px) {
   .tarjeta {
     flex-direction: column;
   }
@@ -454,7 +454,7 @@ ol {
 }
 
 .body {
-  background-image: url("../../imga/shellfish-3062011_1920.jpg");
+  background-image: url("../imga/shellfish-3062011_1920.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -522,21 +522,34 @@ ol {
   color: black;
 }
 
+@media screen and (max-width: 480px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    background-image: contain;
+    padding: 20px;
+  }
+  .grid .grid_item {
+    height: 300px;
+  }
+}
+
 .aereos {
-  background-image: url("../../imga/aereos.jpg");
+  background-image: url("../imga/aereos.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
 
 .hotel {
-  background-image: url("../../imga/alojamiento.jpg");
+  background-image: url("../imga/alojamiento.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .contacto {
-  background-image: url("../../imga/fondocontactos.jpg");
+  background-image: url("../imga/fondocontactos.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -547,19 +560,19 @@ ol {
 }
 
 .cruceros {
-  background-image: url("../../imga/crucero.jpg");
+  background-image: url("../imga/crucero.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
 
 .paquetes {
-  background-image: url("../../imga/paquetes.jpg");
+  background-image: url("../imga/paquetes.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
 
 .quienessomos {
-  background-image: url("../../imga/oficina.jpg");
+  background-image: url("../imga/oficina.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
