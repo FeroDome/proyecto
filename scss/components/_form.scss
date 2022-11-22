@@ -1,6 +1,5 @@
 /*formulario aerolinea*/
 .form1 {
-
     background-color: $colornegro;
     height: 650px;
     width: 700px;
@@ -9,6 +8,8 @@
     opacity: 0.7;
     border-radius: 20px;
     display: block;
+
+
 
     & h3 {
         font-family: $fontroboto;
@@ -33,6 +34,7 @@
     &::placeholder {
         color: #fff;
     }
+
 }
 
 
@@ -45,7 +47,10 @@
     outline: none;
     background: transparent;
     color: #fff;
-}
+
+
+
+
 
 .input2 #input-group {
     width: 195px;
@@ -119,34 +124,50 @@
     color: #fff;
 }
 
-@media mobile {
-    .form1 {
-        $grid-breakpoints: xs;
+.container {
+    @include mobile {
+        display: flex;
+        flex-direction: column;
     }
-    
 }
 
+
+}
+
+
+
+
 /*formulario hotel y alojamientos*/
+
+
 
 .form2 {
     background-color: rgb(9, 9, 9);
     height: 500px;
     width: 800px;
-    margin: auto;
-    margin-top: 100px;
+    margin: 50px;
     opacity: 0.7;
     border-radius: 10px;
-    display: block;
-
-
+    display: flex;
 
 }
 
 .first-group {
-    border: none;
+
     width: 400px;
-    margin-top: 38px;
-    position: absolute;
+    margin-top: 20px;
+    display: block;
+
+
+}
+.second-group {
+
+    width: 400px;
+    margin-top: 20px;
+    display: block;
+;
+
+
 }
 
 .content {
@@ -156,7 +177,7 @@
     padding: 5px;
 }
 
-.content #input-group {
+.content .input-group {
     border: none;
     outline: none;
     background: transparent;
@@ -178,14 +199,9 @@
 }
 
 
-.second-group {
-    border: none;
-    width: 400px;
-    margin-top: 55px;
-    margin-left: 400px;
-}
 
-#submit-btn {
+
+.submit-btn {
     margin-top: 30px;
     margin-left: 600px;
     background: transparent;
@@ -204,9 +220,14 @@
 
 }
 
-@include mobile {
-    .container-fluid {
+.form2 {
+    @include mobile {
+        width: auto;
+        display: flex;
         flex-direction: column;
+
+
 
     }
 }
+

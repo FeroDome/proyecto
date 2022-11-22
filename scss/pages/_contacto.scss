@@ -9,3 +9,10 @@
     margin: 20px;
 
 }
+
+.contact {
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+    }
+}

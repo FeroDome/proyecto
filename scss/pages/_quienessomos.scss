@@ -27,8 +27,21 @@
         text-align: left;
         height: 400px;
         color: $colornegro;
+
+        @include mobile {
+            font-size: 1.2rem;
+        }
     }
 
     
 
+}
+.mision {
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+
+
+    }
 }

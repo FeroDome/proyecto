@@ -61,6 +61,13 @@ ol {
   font-family: "Roboto Slab", serif;
 }
 
+@media screen and (max-width: 480px) {
+  .h1form {
+    display: flex;
+    text-align: left;
+  }
+}
+
 .mv {
   margin: 20px;
   background-color: rgba(132, 166, 187, 0.518);
@@ -98,7 +105,6 @@ ol {
 .banner:hover {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
   transform: translateY(-3%);
-  background-color: rgba(69, 144, 146, 0.641);
   color: black;
 }
 @media screen and (max-width: 480px) {
@@ -228,8 +234,7 @@ ol {
   background: transparent;
   color: #fff;
 }
-
-.input2 #input-group {
+.input #input-group .input2 #input-group {
   width: 195px;
   margin: 5px;
   border-top: none;
@@ -239,12 +244,10 @@ ol {
   background: transparent;
   color: #fff;
 }
-
-.input3 #input-group {
+.input #input-group .input3 #input-group {
   margin-left: 50px;
 }
-
-.input4 #input-group {
+.input #input-group .input4 #input-group {
   width: 300px;
   margin: 5px;
   border-top: none;
@@ -254,8 +257,7 @@ ol {
   background: transparent;
   color: #fff;
 }
-
-.input4 #input-group1 {
+.input #input-group .input4 #input-group1 {
   width: 615px;
   margin: 5px;
   border-top: none;
@@ -265,8 +267,7 @@ ol {
   background: transparent;
   color: #fff;
 }
-
-.input5 h3 {
+.input #input-group .input5 h3 {
   font-family: "Roboto Slab", serif;
   color: rgb(233, 235, 240);
   text-align: center;
@@ -276,8 +277,7 @@ ol {
   padding: 10px;
   margin: 20px;
 }
-
-.input6 #input-group {
+.input #input-group .input6 #input-group {
   width: 300px;
   margin: 5px;
   border-top: none;
@@ -287,8 +287,7 @@ ol {
   background: transparent;
   color: #fff;
 }
-
-.input6 #input-group1 {
+.input #input-group .input6 #input-group1 {
   width: 615px;
   margin: 5px;
   border-top: none;
@@ -298,24 +297,34 @@ ol {
   background: transparent;
   color: #fff;
 }
+@media screen and (max-width: 480px) {
+  .input #input-group .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 /*formulario hotel y alojamientos*/
 .form2 {
   background-color: rgb(9, 9, 9);
   height: 500px;
   width: 800px;
-  margin: auto;
-  margin-top: 100px;
+  margin: 50px;
   opacity: 0.7;
   border-radius: 10px;
-  display: block;
+  display: flex;
 }
 
 .first-group {
-  border: none;
   width: 400px;
-  margin-top: 38px;
-  position: absolute;
+  margin-top: 20px;
+  display: block;
+}
+
+.second-group {
+  width: 400px;
+  margin-top: 20px;
+  display: block;
 }
 
 .content {
@@ -325,7 +334,7 @@ ol {
   padding: 5px;
 }
 
-.content #input-group {
+.content .input-group {
   border: none;
   outline: none;
   background: transparent;
@@ -333,24 +342,17 @@ ol {
   width: 300px;
   color: #fff;
 }
-.content #input-group::-moz-placeholder {
+.content .input-group::-moz-placeholder {
   color: #fff;
 }
-.content #input-group:-ms-input-placeholder {
+.content .input-group:-ms-input-placeholder {
   color: #fff;
 }
-.content #input-group::placeholder {
+.content .input-group::placeholder {
   color: #fff;
 }
 
-.second-group {
-  border: none;
-  width: 400px;
-  margin-top: 55px;
-  margin-left: 400px;
-}
-
-#submit-btn {
+.submit-btn {
   margin-top: 30px;
   margin-left: 600px;
   background: transparent;
@@ -362,16 +364,19 @@ ol {
   padding: 10px;
   font-size: 20px;
 }
-#submit-btn:hover {
+.submit-btn:hover {
   background: rgb(233, 235, 240);
   color: rgb(59, 70, 224);
 }
 
 @media screen and (max-width: 480px) {
-  .container-fluid {
+  .form2 {
+    width: auto;
+    display: flex;
     flex-direction: column;
   }
 }
+
 /*tarjeta viajes*/
 .tarjeta {
   margin: 30px;
@@ -559,6 +564,13 @@ ol {
   margin: 20px;
 }
 
+@media screen and (max-width: 480px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .cruceros {
   background-image: url("../../imga/crucero.jpg");
   background-attachment: fixed;
@@ -598,4 +610,17 @@ ol {
   text-align: left;
   height: 400px;
   color: black;
+}
+@media screen and (max-width: 480px) {
+  .mision p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mision {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+  }
 }/*# sourceMappingURL=main.css.map */

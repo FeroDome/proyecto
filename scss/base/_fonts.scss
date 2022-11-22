@@ -50,7 +50,13 @@
     color: $coloruno;
     font-size: 3rem;
     font-family: $fontroboto;
-    
+
+}
+.h1form {
+    @include mobile {
+        display: flex;
+        text-align: left;
+    }
 }
 
 .mv {
