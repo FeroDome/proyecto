@@ -44,7 +44,7 @@
 
     .grid_item1 {
         grid-area: item1;
-        background-image: url(../imga/imgarg/bsas1.jpg);
+        background-image: url(../../imga/imgarg/bsas1.jpg);
         height: 400px;
 
 
@@ -53,13 +53,13 @@
 
     .grid_item2 {
         grid-area: item2;
-        background-image: url(../imga/Verona.jpg);
+        background-image: url(../../imga/Verona.jpg);
 
     }
 
     .grid_item3 {
         grid-area: item3;
-        background-image: url(../imga/crucero2.jpg);
+        background-image: url(../../imga/crucero2.jpg);
 
     }
     &:hover {
