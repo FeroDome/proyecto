@@ -542,14 +542,14 @@ ol {
 }
 
 .hotel {
-  background-image: url("../imga/alojamiento.jpg");
+  background-image: url("../../imga/alojamiento.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .contacto {
-  background-image: url("../imga/fondocontactos.jpg");
+  background-image: url("../../imga/fondocontactos.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -560,19 +560,19 @@ ol {
 }
 
 .cruceros {
-  background-image: url("../imga/crucero.jpg");
+  background-image: url("../../imga/crucero.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
 
 .paquetes {
-  background-image: url("../imga/paquetes.jpg");
+  background-image: url("../../imga/paquetes.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
 
 .quienessomos {
-  background-image: url("../imga/oficina.jpg");
+  background-image: url("../../imga/oficina.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
